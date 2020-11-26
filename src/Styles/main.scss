@@ -6,7 +6,5 @@
 html{
     scroll-behavior: smooth;
     font-family: 'Open Sans Condensed', sans-serif;
-    ::-webkit-scrollbar{
-        display: none
-    };
+    overflow: overlay
 }
