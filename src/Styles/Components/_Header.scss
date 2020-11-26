@@ -1,0 +1,21 @@
+.header_container{
+    position: fixed;
+    width: 100vw;
+    height: 60px;
+    background-color: rgb(33, 88, 56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.541);
+}
+
+.header_title{
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+.header_logo{
+    width: 70px;
+    margin-right: 10px;
+}
