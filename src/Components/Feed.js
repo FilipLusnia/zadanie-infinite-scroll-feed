@@ -3,7 +3,6 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 function Feed() {
   
   const [ lastPostNumber, setLastPostNumber ] = useState(0);
-  const [ page, setPage ] = useState(1);
   const [ fetchedPosts, setFetchedPosts ] = useState([]);
   const [ endInfo, setEndInfo] = useState(false);
   const [ loadingInfo, setLoadingInfo] = useState(false);
@@ -30,7 +29,6 @@ function Feed() {
         setEndInfo(true)
       }
       setFetchedPosts([...fetchedPosts, ...posts])
-      console.log(lastPostNumber)
       setLoadingInfo(false)
     })
     setLastPostNumber(newLastPostNumber)
@@ -38,7 +36,7 @@ function Feed() {
 
   useEffect(() => {
     getPosts()
-  }, [page])
+  }, [])
 
   return (
       <div className="feed_container">
